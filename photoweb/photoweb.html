@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enjoy Photography</title>
+<link rel="icon" type="icons/x-image" href="img/ab1.jpg">
+<style>
+*{margin:0;padding:0px;box-sizing:border-box;}
+
+header{
+	width:100vw;
+	height:100vh;
+	background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('img/banner1.jpg');
+	background-size: cover;
+	background-position:;
+	position: relative;
+	background-attachment: fixed;
+        
+}
+
+body{
+scroll-behaviour:smooth;
+overflow-x:hidden;
+width:100%;
+}
+
+.logo{
+font-size:40px;
+letter-spacing:1px;
+margin-left:50px;
+}
+
+.sublogo{
+color:#e74c3c;
+letter-spacing:5px;
+}
+
+nav{
+position:fixed;
+display:flex;
+margin:auto;
+justify-content:space-between;
+align-items:center;
+background-color:white;
+height:80px;
+width:100%;
+}
+
+.nav{
+display:flex;
+justify-content:center;
+}
+
+.nav a{
+padding:10px 20px;
+text-decoration:none;
+color:black;
+font-size:23px;
+}
+
+nav a:hover{
+color:#e74c3c;
+}
+
+div #login{
+margin-left:0px;
+display:flex;
+}
+
+#login button{
+outline:none;
+border:2px solid #e74c3c;
+border-radius:10px;
+background-color:#e74c3c;
+color:white;
+cursor:pointer;
+width:75px;
+height:35px;
+}
+
+#login button:hover{
+background-color:white;
+color:#e74c3c;
+}
+
+
+
+.banner-heading{
+display:flex;
+justify-content:center;
+}
+
+.banner-heading h1{
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+font-size:45px;
+letter-spacing:3px;
+margin-top:200px;
+}
+
+#sear{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+#sear input{
+border:none;
+outline:none;
+margin-top:20px;
+width:430px;
+padding:20px;
+border-radius:10px 0px 0px 10px;
+font-size:20px;
+}
+
+button#searbtn{
+margin-top:20px;
+background-color:#e74c3c;
+padding:5.5px;
+border-radius:0px 10px 10px 0px;
+cursor:pointer;
+outline:none;
+border:none;
+width:100px;
+}
+
+button#searbtn:hover{
+background-color:white;
+color:black;
+}
+
+i.fasear{
+font-size:45px;
+color:black;
+text-align:center;
+font-size:45px;
+letter-spacing:3px;
+}
+
+i.fasear:hover{
+color:black;
+}
+
+/*Gallery Section*/
+#heading-gallery{
+margin-top:30px;
+}
+
+#heading-gallery h1{
+display:flex;
+justify-content:center;
+font-size:45px;
+letter-spacing:5px;
+font-size:55px;
+}
+
+#page{
+display:flex;
+justify-content:center;
+margin-top:20px;
+}
+
+#page a{
+padding:10px 20px;
+margin-left:40px;
+text-decoration:none;
+color:black;
+font-size:18px;
+border:1px solid #e74c3c;
+border-radius:10px;
+}
+
+#page a:hover{
+background-color:#e74c3c;
+border:1px solid #e74c3c;
+color:white;
+}
+
+.active2{
+background-color:#e74c3c;
+border:1px solid #e74c3c;
+color:white;
+}
+
+.picgallery{
+display:inline-block;
+margin-left:120px;
+margin-top:30px;
+}
+
+div.img1{
+float:left;
+}
+
+.img1 img{
+border-radius:10px;
+margin:10px;
+width:350px;
+}
+
+.img1 img:hover{
+cursor:pointer;
+transition: 0.4s ease-in-out;
+}
+
+/*Information Section*/
+#inform{
+margin-top:20px;
+}
+
+.headinfo{
+display:flex;
+justify-content:center;
+}
+
+.headinfo{
+font-size:26px;
+letter-spacing:3px;
+}
+
+.headinfo span{
+color:#e74c3c;
+}
+
+div.inforimg{
+display:flex;
+justify-content:center;
+margin-top:20px;
+}
+
+div.inforpara{
+display:flex;
+justify-content:center;
+margin-top:25px;
+}
+
+.inforpara p{
+text-align:center;
+width:600px;
+}
+
+div.namehead h1{
+display:flex;
+justify-content:center;
+margin-top:30px;
+}
+
+div.icons{
+display:flex;
+justify-content:center;
+}
+
+.icons a img{
+width:100px;
+height:100px;
+padding:30px 20px;
+}
+
+div.team{
+display:flex;
+justify-content:center;
+margin-bottom:20px;
+
+}
+
+.team img{
+height:200px;
+width:200px;
+cursor:pointer;
+}
+
+.team img:hover{
+height:270px;
+width:270px;
+transition: 0.4s ease-in-out;
+}
+
+footer{
+width:100%;
+padding:50px 100px;
+background-color:#262626;
+align-items:center;
+}
+
+#ftrtext{
+color:white;
+border:1px solid white;
+padding:40px 50px;
+width:1050px;
+margin-left:0px;
+}
+
+div #ftinput{
+margin-left:535px;
+margin-top:-50px;
+}
+
+#ftinput input{
+border:none;
+outline:none;
+padding:13px 30px;
+font-size:15px;
+border-radius:10px;
+}
+
+#ftinput button{
+padding:13px 40px;
+font-size:15px;
+border-radius:10px;
+background-color:#e74c3c;
+color:white;
+outline:none;
+border:none;
+}
+
+#ftinput button:hover{
+cursor:pointer;
+color:grey;
+background-color:white;
+border:1px solid #e74c3c;
+}
+
+div.links{
+align-items:center;
+justify-content:space-between;
+margin-top:30px;
+color:white;
+}
+
+th{
+color:white;
+font-size:35px;
+padding:15px 45px;
+}
+
+td{
+margin-left:10px;
+}
+
+td a{
+line-height:2em;
+font-size:19px;
+color:grey;
+padding:40px;
+text-decoration:none;
+}
+
+</style>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+
+<header>
+    <nav>
+      <div class="logo">PhotO<span class="sublogo">pi</span>X</div>
+    
+         <div class="nav">
+           <a href="" alt="Home" class="active">Home</a>
+           <a href="" alt="Gallery">Gallery</a>
+           <a href="" alt="About Us">About Us</a>
+           <a href="" alt="Contact">Contact Us</a>
+         </div>
+         
+
+         <div id="login">
+           <button type="button">Login</button>
+           <div><i style="font-size:40px;color:red;display:flex;cursor:pointer;margin-top:-43px;margin-left:80px" class="fa">&#xf2bd;</i></div>
+         </div>
+     </nav>
+      
+     <div class="banner-heading">
+       
+       <h1>Capturing the moments that <br> captivate your heart.</h1>
+     </div>
+     <div id="sear">
+       <input type="search" placeholder="Type to Search...">
+       <button type="button" id="searbtn"><i class="fasear">&#xf002;</i></button>
+     </div>
+    
+</header>
+
+<div id="gallery">
+    <div id="heading-gallery">
+      <h1>Gallery</h1>
+    </div>
+    
+    <div id="page">
+       <a href="" alt="All" class="active2">All</a>
+       <a href="" alt="Nature">Nature</a>
+       <a href="" alt="Fashion">Fashion</a>
+       <a href="" alt="Wedding">Wedding</a>
+    </div>
+
+    <div class="picgallery">
+       <div class="img1">
+           <img src="img/p1.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p2.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p3.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p4.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p5.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p6.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p7.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p8.jpg" alt="pic1">
+       </div>
+
+        <div class="img1">
+           <img src="img/p9.jpg" alt="pic1">
+       </div>
+    </div>
+
+</div>
+
+<div id="inform">
+   <div class="headinfo">
+      <h1>Our <span class="infor">Information</span></h1>
+   </div>
+
+   <div class="inforimg">
+     <img src="img/member.png" alt="pic">
+   </div>
+
+   <div class="inforpara">
+     <p>From Rajasthan,doing gym is good for healthy life. it helps our body to fit. it release stress from our mind.From Rajasthan,doing gym is good for healthy life.         it helps our body to fit. it release stress from our mind.</p>
+   </div>
+
+   <div class="namehead">
+      <h1>* Maria Sharapova</h1>
+   </div>
+</div>
+
+<div class="icons">
+      <a href="" alt="Facebook"><img src="img/icon1.png"></a>
+      <a href="" alt="Whattsapp"><img src="img/icon2.png"></a>
+      <a href="" alt="Instagram"><img src="img/icon3.png"></a>
+      <a href="" alt="Twitter"><img src="img/icon4.png"></a>
+</div>
+
+<div class="team" data-aos="zoom-in" data-aos-offset="100" data-aos-delay="300">
+   <img src="img/s1.jpg" alt="img">
+   <img src="img/s2.jpg" alt="img">
+   <img src="img/s3.jpg" alt="img">
+   <img src="img/s4.jpg" alt="img">
+   <img src="img/s5.jpg" alt="img">
+   <img src="img/s6.jpg" alt="img">
+</div>
+
+<footer>
+  <div id="ftrtext">
+    <h1>Subscribe our newsletter</h1>
+    <p>We’re a team of non-cynics who truly care for our work.<p>
+    <div id="ftinput"><input type="email" placeholder="Enter Your Email">
+    <button type="button">Subscribe</button></div>
+  </div>
+ 
+  <div class="links">
+    <table>
+       <tr>
+          <th>Information</th>
+          <th>Useful links</th>
+          <th>Details</th>
+          <th>Help & Support</th>
+       </tr>
+
+       <tr>
+          <td>Lorem ipsum dolor sit amet, <br>consectetur elit.<br> Nihil sit dicta.</td>
+
+          <td><a href="" alt="">About us</a>
+          <br>
+          <a href="" alt="">Gallery</a>
+          <br>
+          <a href="" alt="">Blog posts</a>
+          <br>
+          <a href="" alt="">Pricing plans</a>
+          </td>
+
+         <td>
+         <a href="" alt="">Photographers</a>
+         <br>
+         <a href="" alt="">Gallery</a>
+         <br>
+         <a href="" alt="">About</a>
+         <br>
+         <a href="" alt="">Pricing plans</a>
+         </td>
+
+         <td>
+           <a href="" alt="">Privacy policy</a>
+           <br>
+           <a href="" alt="">Term & conditions</a>
+           <br>
+           <a href="" alt="">Technical support</a>
+           <br>
+           <a href="" alt="">Customer care</a>
+         </td>
+
+       </tr>
+    </table>
+
+</footer>
+</body>
+</html>
