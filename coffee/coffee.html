@@ -1,0 +1,531 @@
+<!doctype>
+<html>
+<head>
+<title>Coffee Lovers</title>
+<link rel="icons" type="image/x-icons">
+<style>
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+  
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 5rem;
+}
+
+body{
+ background-image:url('images/home-img.jpeg');
+    background-size:cover;
+    background-repeat:none;
+    background-attachment:fixed;
+}
+
+#header{
+display:flex;
+background-color:black;
+height:100px;
+border-bottom:1px solid white;
+position:sticky;
+}
+
+#logo img{
+height:65px;
+width:79px;
+margin-top:18px;
+margin-left:50px;
+}
+
+#nav{
+margin:auto;
+}
+
+#nav a{
+padding:0px 20px;
+font-size:18px;
+text-decoration:none;
+background-color:black;
+color:white;
+}
+
+/*Banner Section*/
+#banner{
+margin-top:120px;
+}
+
+/*.bannerimg{
+display:flex;
+justify-content:center;
+}
+
+.bannerimg img{
+height:720px;
+}*/
+
+.bannertext h1{
+margin-left:100px;
+margin-top:70px;
+color:white;
+font-size:60px;
+}
+
+.bannertext p{
+color:white;
+font-size:20px;
+margin-top:20px;
+margin-left:100px;
+}
+
+div #btn1{
+margin-left:100px;
+margin-top:10px;
+}
+
+#btn1 button{
+padding:15px;
+letter-spacing:2px;
+font-size:14px;
+color:white;
+background-color: #d3ad7f;
+}
+
+/*About Section*/
+#about{
+margin-top:150px;
+}
+
+#abouthead{
+display:flex;
+justify-content:center;
+}
+
+#abouthead h1{
+font-size:45px;
+color:white;
+margin-top:50px;
+}
+
+#abouthead span{
+font-size:45px;
+color:#d3ad7f;
+}
+
+#infor{
+display:flex;
+justify-content:center;
+margin-top:50px;
+margin-left:0px;
+margin-bottom:80px;
+}
+
+#infor img{
+width:600px;
+height:400px;
+
+}
+
+div.abt-text{
+background-color:#13131a;
+width:600px;
+}
+
+.abt-text h1{
+color:white;
+font-size:33px;
+margin:40px 40px;
+}
+
+.abt-text span{
+color:#ccc;
+font-size:16px;
+margin:0px 20px 20px 35px;
+letter-spacing:1px;
+display:inline-block;
+}
+
+#about-btn{
+margin-top:0px;
+background-color:#d3ad7f;
+display:inline-block;
+width:130px;
+margin-left:30px;
+}
+
+#about-btn a{
+color:white;
+text-decoration:none;
+font-size:18px;
+padding:10px;
+}
+
+
+#about-btn a{
+
+}
+
+/*Menu section*/
+#menu{
+margin-top:30px;
+margin-bottom:0px;
+}
+
+#menu-head{
+font-size:22px;
+color:white;
+display:flex;
+justify-content:center;
+}
+
+#menu-head span{
+color:#d3ad7f;
+}
+
+.gallery{
+display:inline-block;
+justify-content:center;
+margin-left:50px;
+margin-top:50px;
+}
+
+.menu-img{
+border:1px solid grey;
+display:inline-block;
+padding:50px 50px;
+margin:7px;
+height:350px;
+width:400px;
+background-color:black;
+}
+
+.menu-img:hover{
+background-color:white;
+color:black;
+}
+
+.menu-img img{
+width:100px;
+height:100px;
+margin-left:100px;
+}
+
+.menu-img p{
+display:flex;
+color:#d3ad7f;
+font-size:25px;
+margin-top:20px;
+justify-content:center;
+}
+
+.gallery-btn{
+display:flex;
+justify-content:center;
+margin-top:30px;
+}
+
+.gallery-btn button{
+width:130px;
+padding:10px;
+font-size:15px;
+background-color:#d3ad7f;
+color:white;
+cursor:pointer;
+}
+
+/*Products Section*/
+
+#products{
+margin-top:50px;
+}
+
+#product-head{
+display:flex;
+justify-content:center;
+}
+
+#product-head h1{
+font-size:45px;
+color:white;
+letter-spacing:2px;
+}
+
+#product-head span{
+color:#d3ad7f;
+}
+
+.main-product{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:30px;
+}
+
+.product-gallery{
+display:inline-block;
+border:1px solid grey;
+background-color:black;
+padding:50px;
+margin:05px;
+width:400px;
+height:450px;
+}
+
+.product-gallery img{
+margin-left:70px;
+margin-top:20px;
+}
+
+.product-gallery h2,p{
+display:flex;
+justify-content:center;
+color:white;
+font-size:25px;
+margin-top:30px;
+}
+
+
+/*Customer Section*/
+#customer{
+margin-top:50px;
+}
+
+#customer-head{
+display:flex;
+justify-content:center;
+}
+
+#customer-head h1{
+font-size:45px;
+color:white;
+letter-spacing:2px;
+}
+
+#customer-head span{
+color:#d3ad7f;
+}
+
+.main-customer{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:30px;
+}
+
+.customer-gallery{
+display:inline-block;
+border:1px solid grey;
+background-color:black;
+padding:50px;
+margin:05px;
+width:400px;
+height:450px;
+}
+
+img.qoute{
+margin-left:110px;
+}
+
+img.customer{
+border-radius:100px;
+height:80px;
+width:80px;
+margin-left:110px;
+margin-top:30px;
+}
+
+.customer-gallery h2,p{
+display:flex;
+justify-content:center;
+color:white;
+font-size:25px;
+margin-top:30px;
+}
+
+.customer-gallery p{
+font-size:15px;
+text-align:center;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<div id="header">
+   
+   <div id="logo">
+        <img src="images/logo.png">
+   </div>
+   
+   <div id="nav">
+       <nav>
+           <a href="" alt="Home">Home</a>
+           <a href="" alt="Menu">Menu</a>
+           <a href="" alt="Products">Products</a>
+           <a href="" alt="">About</a>
+           <a href="" alt="">Contact</a>
+           <a href="" alt="">Review</a>
+           <a href="" alt="">Blog</a>
+      </nav>
+   </div>
+</div>
+
+<div id="banner">
+   <div class="bannertext">
+      <h1>FRESH COFFEE IN <br> THE MORNING</h1>
+      <p>Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Placeat<br>Labore, Sint Cupiditate Distinctio Tempora Reiciendis.</p>
+   </div>
+ 
+   <div id="btn1">
+     <button type="button">Get Your Order</button>
+   </div>
+</div>
+
+<div id="about">
+   <div id="abouthead">
+       <h1><span>ABOUT</span> US</h1>
+   </div>
+
+   <div id="infor">
+     <img src="images/about-img.jpeg" alt="">
+     <div class="abt-text"><h1>What makes our coffee special?</h1><span>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptatibus Qui Ea Ullam, Enim                      Tempora Ipsum Fuga Alias Quae Ratione A Officiis Id Temporibus Autem? Quod Nemo Facilis Cupiditate. Ex, Vel?
+                   <br><br>
+                Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Odit Amet Enim Quod Veritatis, Nihil Voluptas Culpa! Neque Consectetur Obcaecati                            Sapiente?</span>
+      <div id="about-btn"><a href="" alt="Learn More" id="about-btn">Learn More</a></div>
+     </div>
+    </div>
+</div>
+
+<div id="menu">
+      <div id="menu-head">
+         <h1>OUR <span> MENU</span></h1>
+      </div>
+     
+   <div class="gallery"> 
+      <div class="menu-img">
+        <img src="images/menu-1.png">
+        <p>Tasty&Healthy</p>
+        <p>$15.99</p>
+        <div class="gallery-btn"><button type="button">Add to cart</button></div>
+      </div>
+
+      <div class="menu-img">
+        <img src="images/menu-2.png">
+        <p>Tasty&Healthy</p>
+        <p>$15.99</p>
+        <div class="gallery-btn"><button type="button">Add to cart</button></div>
+      </div>
+
+      <div class="menu-img">
+        <img src="images/menu-3.png">
+       <p>Tasty&Healthy</p>
+        <p>$15.99</p>
+        <div class="gallery-btn"><button type="button">Add to cart</button></div>
+      </div>
+
+      <div class="menu-img">
+        <img src="images/menu-4.png">
+        <p>Tasty&Healthy</p>
+        <p>$15.99</p>
+        <div class="gallery-btn"><button type="button">Add to cart</button></div>
+      </div>
+
+      <div class="menu-img">
+        <img src="images/menu-5.png">
+        <p>Tasty&Healthy</p>
+        <p>$15.99</p>
+        <div class="gallery-btn"><button type="button">Add to cart</button></div>
+      </div>
+
+      <div class="menu-img">
+        <img src="images/menu-6.png">
+        <p>Tasty&Healthy</p>
+        <p>$15.99</p>
+        <div class="gallery-btn"><button type="button">Add to cart</button></div>
+      </div>
+   </div>
+</div> 
+
+<div id="products">
+       <div id="product-head">
+         <h1>OUR <span> PRODUCTS</span></h1>
+       </div>
+  
+   <div class="main-product">
+
+       <div class="product-gallery">
+         <img src="images/product-1.png" alt="">
+         <h2>Fresh Coffee</h2>
+         <p>$15.99</p>
+       </div>
+
+       <div class="product-gallery">
+          <img src="images/product-2.png" alt="">
+          <h2>Fresh Coffee</h2>
+          <p>$15.99</p>
+       </div>
+
+       <div class="product-gallery">
+          <img src="images/product-3.png" alt="">
+          <h2>Fresh Coffee</h2>
+          <p>$15.99</p>
+       </div>
+
+   </div>
+
+</div>   
+
+
+<div id="customer">
+
+       <div id="customer-head">
+         <h1>CUSTOMER'S <span> REVIEW</span></h1>
+       </div>
+  
+   <div class="main-customer">
+
+       <div class="customer-gallery">
+         <img src="images/quote-img.png" alt="" class="qoute">
+         <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi Quas Eaque                      Laudantium Consequuntur Iste Ex Aliquam Minus Vel? Nemo.</p>
+         <img src="images/pic-1.png" alt="" class="customer">
+         <h2>John Deo</h2>
+       </div>
+
+       <div class="customer-gallery">
+          <img src="images/quote-img.png" alt="" class="qoute">
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi Quas Eaque                      Laudantium Consequuntur Iste Ex Aliquam Minus Vel? Nemo.</p>
+          <img src="images/pic-2.png" alt="" class="customer">
+          <h2>John Deo</h2>
+       </div>
+
+       <div class="customer-gallery">
+          <img src="images/quote-img.png" alt="" class="qoute">
+          <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Animi Nulla Sit Libero Nemo Fuga Sequi Nobis? Necessitatibus Aut Laborum, Nisi Quas Eaque                      Laudantium Consequuntur Iste Ex Aliquam Minus Vel? Nemo.</p>
+          <img src="images/pic-3.png" alt="" class="customer">
+          <h2>John Deo</h2>
+       </div>
+
+   </div>
+</div>
