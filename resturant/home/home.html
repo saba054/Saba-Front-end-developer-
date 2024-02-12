@@ -1,0 +1,576 @@
+<!doctype>
+<html>
+<head><title>Dewana Resturant</title>
+<link rel="icon" type="icons/x-image" href="logorem.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0px;
+padding:0px;
+}
+
+body{
+font-family:Lucida Console;
+background-image:url('bg1.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment:fixed;
+}
+
+div.logo{
+display:inline-block;
+}
+
+div.logo img{
+width:100px;
+height:100px;
+margin-top:10px;
+}
+
+
+.nav{
+position:absolute;
+display:inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin-left:200px;
+  margin-top:30px;
+  padding: 0;
+  overflow: hidden;
+  background-color:;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  display:inline-block;
+  
+  border-radius:30px;
+  width:80%;
+  }
+
+
+li {
+  float: left;
+  width:150px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-style:solid;
+  border-color:#eda800;
+  border-radius:30px;
+  font-size:18px;
+}
+
+li a:hover {
+  background-color:#fdec6e;
+  color:black;
+}
+
+.active {
+  background-color: #fdec6e;
+  color:black;
+  border-radius:30px;
+  }
+
+div.sear{
+display:inline-block;
+position:absolute;
+margin-left:900px;
+margin-top:45px;
+border:2px solid #fdec6e;
+border-radius:30px;
+padding:2px;
+width:205px;
+}
+ 
+.sear input[type='text']{
+outline:none;
+background:transparent;
+border:none;
+padding:0px;
+color:#fdec6e;
+}
+
+.sear button{
+margin-left:170px;
+margin-top:-14px;
+color:white;
+background:transparent;
+border:none;
+padding:0px;
+color:#fdec6e;
+}
+
+.sear button:hover{
+cursor:pointer;
+}
+
+div.load{
+margin-top:30px;
+margin-left:20px;
+color:white;
+}
+
+.load span{
+font-size:35px;
+color:white;
+}
+
+.heading{
+margin-top:140px;
+color:#fdec6e;
+}
+
+.heading h3{
+border-style:solid;
+border-color:#eda800;
+border-radius:30px;
+background-color:#fdec6e;
+color:black;
+padding:10px;
+font-size:20px;
+display:inline-block;
+margin-left:10px;
+position:relative;
+}
+
+.heading span{
+border-style:solid;
+border-color:#eda800;
+border-radius:30px;
+padding:10px;
+color:white;
+}
+
+.food{
+margin:50px 0 0 500px;
+}
+
+
+
+.sd img{
+display:inline-block;
+position:absolute;
+margin-left:800px;
+margin-top:-300px;
+border-style:solid;
+border-color:#fdec6e;
+border-radius:70px;
+animation:image;
+}
+
+/*Animation Part*/
+
+/*Welcome and Enjoy button animation*/
+.heading {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  }
+
+ .heading span{
+  position: relative;
+  display: inline-block;
+  color:white;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  }
+
+.heading h3{
+ 
+  position: relative;
+  display: inline-block;
+  color:black;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+/*Best&Fresh animation*/
+.content {
+  position: relative;
+  margin-left:15px;
+}
+span.content {
+  position: relative;
+  display: inline-block;
+  
+  color: #fff;
+  
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+/*Last para Text animation*/
+
+p {
+ /*text-align: center;
+  transform: scale(0.9);*/
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+p {
+  position: relative;
+  color:white;
+  
+  letter-spacing: 7px;
+  overflow: hidden;
+  
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s
+     infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 520px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+/*@media screen and (max-width:1280px){
+
+body{
+background-attachment:fixed;
+}
+div.logo img{
+height:70px;
+width:70px;
+}
+
+div.nav{
+margin-left:-160px;
+display:flex;
+align-items:center;
+}
+
+div.nav li{
+width:108px;
+height:40px;
+}
+
+div.nav li a{
+font-size:11px;
+}
+
+div.sear{
+margin-left:430px;
+margin-top:-140px;
+padding:1px;
+width:195px;
+}
+
+div.load{
+margin-left:10px;
+}
+
+div.load span{
+font-size:25px;
+}
+
+.food{
+margin-left:318px;
+margin-top:3px;
+}
+
+.sd img{
+height:230px;
+width:330px;
+margin-left:25px;
+margin-top:25px;
+}
+
+}*/
+
+
+@media screen and (max-width:540px){
+
+body{
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+div.sear{
+margin-left:395px;
+margin-top:-190px;
+padding:1px;
+width:195px;
+}
+
+div.nav{
+margin-left:-210px;
+margin-top:-20px;
+display:flex;
+align-items:center;
+}
+
+div.nav li{
+width:140px;
+height:50px;
+margin-left:44px;
+}
+
+div.nav li a{
+font-size:17px;
+}
+
+.heading h3{
+padding:5px;
+margin-left:3px;
+}
+
+.heading span{
+display:block;
+padding:5px;
+margin-left:40px;
+width:193px;
+margin-top:10px;
+}
+
+div.load{
+margin-left:5px;
+}
+
+.load span{
+letter-spacing:0px;
+}
+
+span.content{
+display:inline-block;
+margin-left:127px;
+}
+
+span.food{
+margin-left:193px;
+}
+
+.load p{
+letter-spacing:0px;
+ovrflow:hidden;
+disp
+}
+
+p {
+ /*text-align: center;
+  transform: scale(0.9);*/
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+p {
+  position: relative;
+  color:white;
+  
+  letter-spacing: 0px;
+  overflow: hidden;
+  
+  white-space: nowrap;
+  animation: typewriter 4s steps(44) 1s
+     infinite;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+
+
+.sd img{
+height:230px;
+width:330px;
+margin-left:25px;
+margin-top:25px;
+}
+
+}
+
+
+@media screen and (max-width:375px){
+
+
+body{
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+div.sear{
+margin-left:310px;
+margin-top:-190px;
+padding:1px;
+width:195px;
+}
+
+div.nav{
+margin-left:-210px;
+margin-top:-20px;
+display:flex;
+align-items:center;
+}
+
+ul{
+margin-left:150px;
+}
+
+div.nav li{
+width:140px;
+height:50px;
+margin-left:44px;
+}
+
+div.nav li a{
+font-size:17px;
+}
+
+.heading h3{
+padding:5px;
+margin-left:3px;
+}
+
+.heading span{
+display:block;
+padding:5px;
+margin-left:40px;
+width:193px;
+margin-top:10px;
+}
+
+div.load{
+margin-left:5px;
+}
+
+.load span{
+letter-spacing:0px;
+}
+
+span.content{
+display:inline-block;
+margin-left:127px;
+}
+
+span.food{
+margin-left:113px;
+}
+
+.load p{
+
+letter-spacing:0px;
+ovrflow:scroll;
+display:flex;
+flex-direction:column;
+}
+
+.sd img{
+height:230px;
+width:330px;
+margin-left:25px;
+margin-top:25px;
+}
+
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class="logo">
+<img src="logorem.png">
+</div>
+
+<div class="nav">
+
+<div id="search" class="sear">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+
+<ul>
+<li><a href="../home/home.html" style="margin-left:28px;margin-top:2px;" class="active">Home</a></li>
+<li><a href="../menu/menu.html" style="margin-left:28px;margin-top:2px;">Menu</a></li>
+<li><a href="../booking/booking.html" style="margin-left:28px;margin-top:2px;">Booking</a></li>
+<li><a href="../about/about.html" style="margin-left:28px;margin-top:2px;">About Us</a></li>
+</ul>
+
+</div>
+<div class="heading">
+<h3>Most Welcome</h3>
+<span>Enjoy Every Moment</span>
+</div>
+
+<div class="load">
+<span class="pro">We Provides The</span><span style="color:#fdec6e;" class="content"><strong><b>  Best & Fresh</b></strong></span><br><br><span  class="food"> Food Ever...</span><br>
+<p style="font-size:22px;display:inline-block;letter-spacing:3px;">Feel Like Home,</p>
+<br>
+<p style="margin-left:10px;margin-top:9px;display:inline-block;font-size:22px">Taste Like Paradise.</p>
+
+<p style="font-size:16px;margin-top:10px;letter-spacing:0px;" class="desc">All of our menu items are inspired<br> by  cuisine and have been created by our head <br>chef, after studying authentic cuisine in.<br>Not only do we have fresh flown-in seafood<br> from the northeast,but we also have a variety of<br>cocktails,wine,and beer.</p>
+</div>
+
+<div class="sd img">
+<img src="img-rem.png" alt="#">
+</div>
+
+
+</body>
+</html>
+

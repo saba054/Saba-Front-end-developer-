@@ -1,0 +1,289 @@
+<!doctype>
+<html>
+<head><title>Dewana Resturant</title>
+<link rel="icon" type="icons/x-image" href="logorem.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0px;
+padding:0px;
+}
+
+body{
+font-family:Lucida Console;
+background-image:url('bg1.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+div.logo{
+display:inline-block;
+}
+
+div.logo img{
+width:100px;
+height:100px;
+margin-top:10px;
+}
+
+
+.nav{
+position:absolute;
+display:inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin-left:200px;
+  margin-top:30px;
+  padding: 0;
+  overflow: hidden;
+  background-color:;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  display:inline-block;
+  
+  border-radius:30px;
+  width:80%;
+  }
+
+
+li {
+  float: left;
+  width:150px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  border-style:solid;
+  border-color:#eda800;
+  border-radius:30px;
+  font-size:18px;
+}
+
+li a:hover {
+  background-color:#fdec6e;
+  color:black;
+}
+
+.active {
+  background-color: #fdec6e;
+  color:black;
+  border-radius:30px;
+  }
+
+div.sear{
+display:inline-block;
+position:absolute;
+margin-left:900px;
+margin-top:40px;
+border:2px solid #fdec6e;
+border-radius:30px;
+padding:5px;
+width:205px;
+}
+ 
+.sear input[type='text']{
+outline:none;
+background:transparent;
+border:none;
+padding:0px;
+color:#fdec6e;
+}
+
+.sear button{
+margin-left:170px;
+margin-top:-14px;
+color:white;
+background:transparent;
+border:none;
+padding:0px;
+color:#fdec6e;
+}
+
+.sear button:hover{
+cursor:pointer;
+}
+
+div.load{
+margin-top:200px;
+margin-left:20px;
+color:white;
+}
+
+.load span{
+font-size:35px;
+color:white;
+}
+
+.sd img{
+display:inline-block;
+position:absolute;
+margin-left:900px;
+margin-top:-200px;
+}
+
+div.icons{
+margin-left:70px;
+margin-top:30px;
+}
+
+.icons a{
+text-decoration:none;
+color:white;
+margin-left:5px;
+}
+
+
+
+@media screen and (max-width:1280px){
+
+body{
+background-attachment:fixed;
+}
+div.logo img{
+height:70px;
+width:70px;
+}
+
+div.nav{
+margin-left:-160px;
+display:flex;
+align-items:center;
+}
+
+div.nav li{
+width:108px;
+height:40px;
+}
+
+div.nav li a{
+font-size:11px;
+}
+
+div.sear{
+margin-left:430px;
+margin-top:-140px;
+padding:1px;
+width:195px;
+}
+
+.sd img{
+height:300px;
+width:300px;
+margin-left:25px;
+margin-top:10px;
+}
+
+
+div.icons{
+margin-bottom:20px;
+}
+}
+
+@media screen and (max-width:540px){
+
+body{
+background-attachment:fixed;
+background-position:center;
+background-repeat:no-repeat;
+}
+
+div.sear{
+margin-left:300px;
+margin-top:-140px;
+padding:1px;
+width:195px;
+}
+
+div.nav{
+margin-left:-210px;
+margin-top:-20px;
+display:flex;
+align-items:center;
+}
+
+div.nav li{
+width:140px;
+height:50px;
+margin-left:44px;
+}
+
+div.nav li a{
+font-size:17px;
+}
+
+.sd img{
+height:250px;
+width:250px;
+margin-left:0px;
+margin-top:-455px;
+}
+
+
+div.load{
+margin-top:330px;
+}
+}
+
+
+@media screen and (max-width:412px){
+
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo">
+<img src="logorem.png">
+</div>
+
+<div class="nav">
+
+<div id="search" class="sear">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+
+
+<ul>
+<li><a href="../home/home.html" style="margin-left:28px;margin-top:2px;">Home</a></li>
+<li><a href="menu.html" style="margin-left:28px;margin-top:2px;">Menu</a></li>
+<li><a href="../booking/booking.html" style="margin-left:28px;margin-top:2px;">Booking</a></li>
+<li><a href="../about/about.html" style="margin-left:28px;margin-top:2px;" class="active">About Us</a></li>
+</ul>
+</div>
+
+<div class="load">
+
+<p style="font-size:22px;display:inline-block;letter-spacing:3px;">Feel Like Home,</p>
+<br>
+<p style="margin-left:10px;margin-top:9px;display:inline-block;font-size:22px">Taste Like Paradise.</p>
+
+<p style="font-size:16px;margin-top:10px;letter-spacing:0px;" class="desc">All of our menu items are inspired<br> by  cuisine and have been created by our head chef,<br>(CN), after studying authentic cuisine in. <br>Not only do we have fresh flown-in seafood<br> from the northeast, but we also have a variety of<br>handcrafted cocktails, wine, and beer to choose from.</p>
+</div>
+
+<div class="icons">
+   <a href="#" alt="Check Your Connection"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+   <a href="#" alt="Check Your Connection"><i style="font-size:24px" class="fa">&#xf16d;</i></a>
+   <a href="#" alt="Check Your Connection"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+   <a href="#" alt="Check Your Connection"><i style="font-size:24px" class="fa">&#xf0e0;</i></a>
+</div>
+
+<div class="sd img">
+<img src="logorem.png" alt="#">
+</div>
+
+</body>
+</html>
+
