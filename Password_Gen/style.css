@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b88c8c;
+    background-image: url('th.jfif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+.container {
+    text-align: center;
+    background-color: #236c7e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('th2.jfif');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+.password-display {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 18px;
+    border: 6px solid #414441;
+    border-radius: 4px;
+    background-color: rgb(118, 134, 129);
+}
+
+.options {
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:  rgb(37, 71, 60);;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #518b99;
+}
