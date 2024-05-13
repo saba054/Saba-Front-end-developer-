@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(7, 7, 7);
+}
+div{
+    border: 2px solid pink;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 300px;
+    width: 20%;
+    float: right;
+    margin-right: 600px;
+    border-radius: 4px;
+    box-shadow: 3px 7px lightcoral;
+    transition: border-radius 2s, background-color 2s ease-in-out, transform 2s ease-in-out;
+    animation: rotateXAnimation 4s linear infinite;
+}
+
+div:hover{
+
+color: rgb(37, 36, 39);
+border-radius: 50%;
+background-color:rgb(112, 34, 207);
+margin-left: 100px;
+transform: rotatez(-365deg);
+box-shadow: 5px 9px rgb(175, 145, 79);
+
+}
+
+@keyframes rotateXAnimation {
+    0% { transform: rotatez(0deg); }
+    100% { transform: rotatez(360deg); } /* Rotate around the x-axis by 360 degrees */
+}
+
